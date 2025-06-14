@@ -1,0 +1,51 @@
+==============================================================================
+Python Requirements for Telegram AI Bot
+==============================================================================
+To install all the required packages, run the following command in your terminal:
+pip install -r requirements.txt
+Using this file ensures that you install the correct versions of the libraries,
+which helps prevent bugs and compatibility issues.
+--- Core & Utilities ---
+For reading environment variables from a .env file
+python-dotenv==1.0.1
+
+For data manipulation, especially with Excel and CSV files
+pandas==2.2.2
+
+Required by pandas for reading and writing Excel 2010+ files (xlsx)
+openpyxl==3.1.2
+
+--- Telegram Bot Framework ---
+A modern, asynchronous wrapper for the Telegram Bot API
+python-telegram-bot==21.1
+
+--- AI & Machine Learning (LangChain) ---
+Core LangChain library for building applications with LLMs
+langchain==0.2.0
+
+Provides base abstractions for the LangChain ecosystem
+langchain-core==0.2.1
+
+Community-contributed components for LangChain
+langchain-community==0.2.0
+
+Integrations for Hugging Face models and services
+langchain-huggingface==0.0.3
+
+--- AI & Machine Learning (Hugging Face & Torch) ---
+Hugging Face Transformers for state-of-the-art ML models
+transformers==4.41.2
+
+For creating sentence and text embeddings
+sentence-transformers==3.0.1
+
+Vector store for efficient similarity search (CPU version)
+faiss-cpu==1.8.0
+
+--- Deep Learning Framework (PyTorch) ---
+NOTE: The installation of PyTorch can be system-specific (e.g., CPU, CUDA version).
+The version below is a generic CPU-compatible one.
+For optimal performance, especially with a GPU, it is highly recommended to
+install PyTorch by following the instructions on the official website:
+https://pytorch.org/get-started/locally/
+torch==2.3.1
